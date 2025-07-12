@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { FaCartShopping } from "react-icons/fa6";
+import { FaRegUserCircle } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -12,23 +14,41 @@ const Navbar = () => {
         <Link to="home" spy={true} smooth={true} offset={0} duration={500}>
           Home
         </Link>
-        <Link to="products" spy={true} smooth={true} offset={-40} duration={500}>
+        <Link
+          to="products"
+          spy={true}
+          smooth={true}
+          offset={-40}
+          duration={500}
+        >
           Products
         </Link>
         <Link to="about" spy={true} smooth={true} offset={-50} duration={500}>
           About Us
         </Link>
-        <Link to="testimonials" spy={true} smooth={true} offset={50} duration={500}>
+        <Link
+          to="testimonials"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           Testimonials
         </Link>
-        <Link to="newsletters" spy={true} smooth={true} offset={50} duration={500}>
+        <Link
+          to="newsletters"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           Newsletter
         </Link>
       </div>
 
-      <div className="flex gap-2">
-        <p>Cart</p>
-        <p>login</p>
+      <div className="flex gap-6 px-[2rem]">
+        <FaCartShopping className="h-[1.5rem] w-[1.5rem]" />
+        <FaRegUserCircle className="h-[1.5rem] w-[1.5rem]" />
       </div>
     </div>
   );
